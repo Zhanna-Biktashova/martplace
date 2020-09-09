@@ -1,8 +1,46 @@
-html {
-  box-sizing: border-box;
+@import 'vars';
+@import 'global';
+
+
+.header__top{
+  background-color: #eef1f3;
 }
-*,
-*::before,
-*::after{
-  box-sizing: inherit;
+.header__top-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
 }
+.header__btn{
+  padding: 4px;
+  width: 140px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+}
+.header__btn-seller{
+  background-color: $blue;
+}
+
+.menu{
+  height: 80px;
+  display: flex;
+  text-align: center;
+}
+.menu__list{
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 30px;
+    }
+  }
+  a{
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 42px;
+    font-weight: 500;
+  }
+}
+
+
