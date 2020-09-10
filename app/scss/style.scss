@@ -87,9 +87,10 @@
   background-position: center;
 }
 .search__inner{
-  padding: 170px 0 90px;
+  padding-top: 170px;
   text-align: center;
   color: #f3f3f8;
+  position: relative;
   &-title{
     margin-bottom: 33px;
     font-size: 60px;
@@ -105,19 +106,103 @@
     line-height: 30px;
   }
   &-btn{
-    button{
+    .box{
       outline: none;
       border-radius: 30px;
       width: 190px;
       height: 55px;
-      border: none;
+      border: 1px solid #fff;
       margin-right: 27px;
       cursor: pointer;
       font-size: 16px;
+      background-color: transparent;
+      color: #fff;
     }
   }
-  
-
-  
+  .search__inner-box{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 133px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -290px;
+    transition: all 0.8s;
+    transform: translateY(-50%);
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  .search__inner-category{
+    max-width: 800px;
+    border: 1px solid $border;
+    border-radius: 4px;
+    height: 54px;
+      input{
+        padding: 16px 26px;
+        width: 480px;
+        outline: none;
+        border-right: 1px solid $border;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+      }
+      select{
+        outline: none;
+        padding: 16px 20px;
+        width: 200px;
+        border: none;
+      }
+  }
+  &-button button{
+      background-color: $blue;
+      max-width: 222px;
+      padding: 0 60px;
+      height: 53px;
+      border: 1px solid $border;
+      border-radius: 4px;
+      outline: none;
+      color: #fff;
+      cursor: pointer;
+    }
 }
 
+.items__inner{
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  &-item{
+    max-width: 360px;
+    min-height: 401px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 30px;
+    margin-bottom: 120px;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover{
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+  &-photo{
+    height: 110px;
+    margin-top: 45px;
+  }
+  &-title{
+    font-size: 24px;
+    color: #000;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  &-text{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+}
+ 
