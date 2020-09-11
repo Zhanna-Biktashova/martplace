@@ -86,8 +86,8 @@
         </div>
 
         <div class="search__inner-btn">
-          <button class="box" type="submit">View All Products</button>
-          <button class="box" type="submit">Popular Products</button>
+          <button class="box" type="button" data-filter=".category-all">View All Products</button>
+          <button class="box" type="button" data-filter=".category-popular">Popular Products</button>
         </div>
         <div class="search__inner-box">
           <form>
@@ -160,9 +160,303 @@
 
 
 
+
+
+  <section class="featured">
+    <div class="container">
+      <div class="featured__title title">
+        Weekly Featured Products
+      </div>
+      <div class="featured__inner-box">
+
+        <div class="featured__item">
+          <a class="featured__item-img" href="#"></a>
+          <div class="featured__item-block">
+            <div class="featured__item-content">
+              <a class="featured__item-title" href="#">One Page Resume Template</a>
+              <div class="featured__item-name">
+                <a class="featured__item-author" href="#">
+                  <div class="avatar"></div>
+                  <span>Aazz Tech</span>
+                </a>
+                <a class="featured__item-element" href="#">Wordpress</a>
+              </div>
+              <div class="featured__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="featured__item-button">
+                <button>website</button>
+                <button>plugin</button>
+                <button>landing page</button>
+              </div>
+            </div>
+
+            <div class="featured__item-info">
+              <div class="featured__item-price">$20-$50</div>
+              <div class="featured__item-like">
+                <span class="lnr lnr-heart"></span>
+                46
+              </div>
+              <div class="featured__item-basket">
+                <span class="lnr lnr-cart"></span>
+                464
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+      <div class="products__title title">
+        Newest Release Products
+      </div>
+      <div class="products__choice">
+        <div class="products__choice-btn">
+          <button type="button" data-filter=".category-plugins">Plugins</button>
+          <button type="button" data-filter=".category-wordpress">WordPress</button>
+          <button type="button" data-filter=".category-sitetemplate">Site Template</button>
+          <button type="button" data-filter=".category-psdtemplate">PSD Template</button>
+          <button type="button" data-filter=".category-joomla">Joomla</button>
+          <button type="button" data-filter=".category-userinterface">User Interface</button>
+          <button type="button" data-filter=".category-landingpage">Landing Page</button>
+          <button type="button" data-filter=".category-software">Software</button>
+        </div>
+      </div>
+      <div class="products__inner-box">
+
+        <div class="products__item mix category-wordpress category-landingpage category-all" data-order="1">
+          <a class="products__item-img">
+            <div class="products__item-imgbtn">
+              <button type="button" data-filter=".category-all">More Info</button>
+              <button type="button" data-filter=".category-popular">Live Demo</button>
+            </div>
+          </a>
+          <div class="products__item-content">
+
+            <a class="products__item-title" href="#">E-commerce Shopping Cart</a>
+            <div class="products__item-name">
+              <a class="products__item-author" href="#">
+                <div class="avatar"></div>
+                <span>Theme-Valley</span>
+              </a>
+              <a class="products__item-element" href="#">Plugin</a>
+            </div>
+            <div class="products__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+
+          <div class="products__item-info">
+            <div class="products__item-price">$20</div>
+            <div class="products__item-like">
+              <span class="lnr lnr-heart"></span>
+              90
+            </div>
+            <div class="products__item-basket">
+              <span class="lnr lnr-cart"></span>
+              246
+            </div>
+          </div>
+        </div>
+        <div class="products__item mix category-plugins category-sitetemplate category-all category-popular"
+          data-order="2">
+          <a class="products__item-img" href="#">
+            <div class="products__item-imgbtn">
+              <button>More Info</button>
+              <button>Live Demo</button>
+            </div>
+          </a>
+          <div class="products__item-content">
+
+            <a class="products__item-title" href="#">E-commerce Shopping Cart</a>
+            <div class="products__item-name">
+              <a class="products__item-author" href="#">
+                <div class="avatar"></div>
+                <span>Theme-Valley</span>
+              </a>
+              <a class="products__item-element" href="#">Plugin</a>
+            </div>
+            <div class="products__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+
+          <div class="products__item-info">
+            <div class="products__item-price">$20</div>
+            <div class="products__item-like">
+              <span class="lnr lnr-heart"></span>
+              90
+            </div>
+            <div class="products__item-basket">
+              <span class="lnr lnr-cart"></span>
+              246
+            </div>
+          </div>
+        </div>
+        <div class="products__item mix category-joomla category-psdtemplate category-all category-popular"
+          data-order="3">
+          <a class="products__item-img" href="#">
+            <div class="products__item-imgbtn">
+              <button>More Info</button>
+              <button>Live Demo</button>
+            </div>
+          </a>
+          <div class="products__item-content">
+
+            <a class="products__item-title" href="#">E-commerce Shopping Cart</a>
+            <div class="products__item-name">
+              <a class="products__item-author" href="#">
+                <div class="avatar"></div>
+                <span>Theme-Valley</span>
+              </a>
+              <a class="products__item-element" href="#">Plugin</a>
+            </div>
+            <div class="products__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+
+          <div class="products__item-info">
+            <div class="products__item-price">$20</div>
+            <div class="products__item-like">
+              <span class="lnr lnr-heart"></span>
+              90
+            </div>
+            <div class="products__item-basket">
+              <span class="lnr lnr-cart"></span>
+              246
+            </div>
+          </div>
+        </div>
+        <div class="products__item mix category-software category-userinterface category-all" data-order="4">
+          <a class="products__item-img" href="#">
+            <div class="products__item-imgbtn">
+              <button>More Info</button>
+              <button>Live Demo</button>
+            </div>
+          </a>
+          <div class="products__item-content">
+
+            <a class="products__item-title" href="#">E-commerce Shopping Cart</a>
+            <div class="products__item-name">
+              <a class="products__item-author" href="#">
+                <div class="avatar"></div>
+                <span>Theme-Valley</span>
+              </a>
+              <a class="products__item-element" href="#">Plugin</a>
+            </div>
+            <div class="products__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+
+          <div class="products__item-info">
+            <div class="products__item-price">$20</div>
+            <div class="products__item-like">
+              <span class="lnr lnr-heart"></span>
+              90
+            </div>
+            <div class="products__item-basket">
+              <span class="lnr lnr-cart"></span>
+              246
+            </div>
+          </div>
+        </div>
+        <div class="products__item mix category-wordpress category-userinterface category-all" data-order="5">
+          <a class="products__item-img" href="#">
+            <div class="products__item-imgbtn">
+              <button>More Info</button>
+              <button>Live Demo</button>
+            </div>
+          </a>
+          <div class="products__item-content">
+
+            <a class="products__item-title" href="#">E-commerce Shopping Cart</a>
+            <div class="products__item-name">
+              <a class="products__item-author" href="#">
+                <div class="avatar"></div>
+                <span>Theme-Valley</span>
+              </a>
+              <a class="products__item-element" href="#">Plugin</a>
+            </div>
+            <div class="products__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+
+          <div class="products__item-info">
+            <div class="products__item-price">$20</div>
+            <div class="products__item-like">
+              <span class="lnr lnr-heart"></span>
+              90
+            </div>
+            <div class="products__item-basket">
+              <span class="lnr lnr-cart"></span>
+              246
+            </div>
+          </div>
+        </div>
+        <div class="products__item mix category-joomla category-all category-popular" data-order="6">
+          <a class="products__item-img" href="#">
+            <div class="products__item-imgbtn">
+              <button>More Info</button>
+              <button>Live Demo</button>
+            </div>
+          </a>
+          <div class="products__item-content">
+
+            <a class="products__item-title" href="#">E-commerce Shopping Cart</a>
+            <div class="products__item-name">
+              <a class="products__item-author" href="#">
+                <div class="avatar"></div>
+                <span>Theme-Valley</span>
+              </a>
+              <a class="products__item-element" href="#">Plugin</a>
+            </div>
+            <div class="products__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+          </div>
+
+          <div class="products__item-info">
+            <div class="products__item-price">$20</div>
+            <div class="products__item-like">
+              <span class="lnr lnr-heart"></span>
+              90
+            </div>
+            <div class="products__item-basket">
+              <span class="lnr lnr-cart"></span>
+              246
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="products__bottom-btn">
+        <button type="button" data-filter=".category-all">All New Products</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
