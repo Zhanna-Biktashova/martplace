@@ -579,36 +579,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto 40px;
-  }
-  &-images1{
     svg{
-      width: 50px;
-      height: 50px;
-      fill:  #feb71d;
+       width: 50px;
+       height: 50px;
     }
   }
-  &-images2{
-    svg{
-      width: 50px;
-      height: 50px;
-      fill: #58c9e9;
-    }
-  }
-  &-images3{
-    svg{
-      width: 50px;
-      height: 50px;
-      fill:  #77de51;
-    }
-  }
-  &-images4{
-    svg{
-      width: 50px;
-      height: 50px;
-      fill:  #ff6a6d;
-    }
-  }
-  
   &-num1{
     color: #feb71d;
     font-size: 36px;
@@ -636,7 +611,61 @@
   &-text{
     font-size: 18px;
     line-height: 36px;
+  }
+}
 
+// end advantages
+ 
+// start choice
+
+.choice{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  &__item{
+    max-width: 360px;
+    padding: 50px 30px;
+    border-radius: 4px;
+    // box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+.choice__item{
+  &-num{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 300;
+    font-size: 48px;
+    opacity: 0.2;
+  }
+  &-images{
+    margin-bottom: 35px;
+    svg{
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &-title{
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 25px;
+
+  }
+  &-text{
+    font-size: 16px;
+    line-height: 30px;
   }
 }
 
@@ -644,10 +673,6 @@
 
 
 
+// end choice
 
-
-
-
-// end advantages
- 
 
