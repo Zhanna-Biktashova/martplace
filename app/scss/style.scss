@@ -904,7 +904,35 @@
 
 // end guarantee
 
+// start ready
 
+.ready{
+  background-image: linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 105px 0;
+  &__inner{
+    text-align: center;
+    color: #fff;
+   
+  }
+  &__title{
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    margin-bottom: 45px;
+    font-size: 18px;
+  }
+  button{
+    background-color: #fff;
+    color: $blue;
+  }
+}
+
+// end ready
 
 
 
