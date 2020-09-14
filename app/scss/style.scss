@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'global';
+@import 'fonts';
 
 // start header
 
@@ -934,7 +935,221 @@
 
 // end ready
 
+// start footer
+.footer__top{
+  background-color: #262b30;
+  padding: 110px 0;
+}
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item{
+  color: #ababab;
+  max-width: 170px;
+  width: 100%;
+  a{
+    color: #ababab;
+    font-size: 15px;
+  }
+  li{
+    margin-bottom: 7px;
+  }
+  &-first{
+    max-width: 270px;
+    width: 100%;
+  }
+  &-last{
+    max-width: 370px;
+    width: 100%;
+  }
+  &-logo{
+    margin-bottom: 30px;
+    margin-top: -10px;
+  }
+  &-text{
+    color: #ababab;
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  &-phone{
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '\f095';
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+      font-size: 16px;
+    }
 
+  }
+  &-mail{
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '\f003';
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+      font-size: 16px;
+    }
+
+  }
+  &-adress{
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '\f041';
+      font-family: 'icomoon';
+      position: absolute;
+      left: 3px;
+      bottom: 17px;
+      font-size: 16px;
+    }
+  }
+  &-title{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  &-form{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    input{
+      width: 100%;
+      border-radius: 30px;
+      min-height: 50px;
+      padding-left: 30px;
+      padding-right: 130px;
+      color: #000;
+      border: none;
+      outline: none;
+      &::placeholder{
+        color: #ababab;
+        font-size: 15px;
+      }
+    }
+  }
+  button{
+    height: 50px;
+    background-color: $blue;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+  }
+}
+
+
+
+.footer__item-img{
+
+  a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 42px;
+    & + a{
+      margin-left: 10px;
+    }
+  }
+  .facebook{
+    background-color: #395799;
+    position: relative;
+    &::before{
+      content: '\f09a';
+      font-family: 'icomoon';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .twitter{
+    background-color: #19b2f5;
+    position: relative;
+    &::before{
+      content: '\f099';
+      font-family: 'icomoon';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .pinterest{
+    background-color: #f05b44;
+    position: relative;
+    &::before{
+      content: '\f0d2';
+      font-family: 'icomoon';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .linkedin{
+    background-color: #9c0c1c;
+    position: relative;
+    &::before{
+      content: '\f0e1';
+      font-family: 'icomoon';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .dribbble{
+    background-color: #0da6be;
+    position: relative;
+    &::before{
+      content: '\f17d';
+      font-family: 'icomoon';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .google{
+    background-color: #ea4c89;
+    position: relative;
+    &::before{
+      content: '\f1a0';
+      font-family: 'icomoon';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+.footer__bottom{
+  background-color: #192027;
+  padding: 30px 0;
+  &-text{
+    text-align: center;
+    color: #999999;
+    font-size: 15px;
+    line-height: 27px;
+    span{
+      color: #fff;
+    }
+  }
+}
+
+// and footer
 
 
 
