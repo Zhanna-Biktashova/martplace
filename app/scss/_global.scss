@@ -6,7 +6,10 @@ html {
 *::after{
   box-sizing: inherit;
 }
-
+html,
+body {
+  height: 100%;
+}
 a{
   display: inline-block;
   text-decoration: none;
@@ -25,10 +28,24 @@ body{
   line-height: 28px;
   color: $text;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
 .container{
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.page-content{
+  background-color: #eff1f5;
 }
 .title{
   color: #000;
@@ -69,4 +86,30 @@ body{
   cursor: pointer;
   outline: none;
   border: none;
+}
+.breadcrumbs{
+  &__list{
+    li{
+      display: inline-block;
+      position: relative;
+      & + li{
+        padding-left: 24px;
+        &::before{
+          content: "/";
+          position: absolute;
+          left: 8px;
+          color: #fff;
+        }
+      }
+      &:last-child{
+        a,span{
+        color: #bfcad7
+        }
+      }
+    }
+    a{
+      color: #fff;
+    }
+  }
+
 }
