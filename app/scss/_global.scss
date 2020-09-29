@@ -33,6 +33,7 @@ body{
   font-size: 14px;
   line-height: 28px;
   color: $text;
+  overflow-x: hidden;
 }
 .wrapper {
   display: flex;
