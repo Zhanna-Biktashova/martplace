@@ -20,6 +20,26 @@ $(function(){
     slidesToScroll: 3,
     nextArrow: '<button class="slick-arrow slick-next"><img src="/images/icons/next.png" alt=""></button>',
     prevArrow: '<button class="slick-arrow slick-prev"><img src="/images/icons/prev.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+    ]
   });
 
   
@@ -66,6 +86,10 @@ $('.single-product__tabs .tab').on('click', function(event) {
 
 
   $('input[type="radio"], select').styler();
+
+  
+
+ 
 
   var mixer = mixitup('.products__inner-box');
   
